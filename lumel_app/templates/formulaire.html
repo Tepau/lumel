@@ -1,0 +1,42 @@
+{% load crispy_forms_tags %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="row justify-content-between">
+        <div class="col-md-6">
+            {{ form.nom|as_crispy_field }}
+        </div>
+        <div class="col-md-6">
+            {{ form.telephone|as_crispy_field }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ form.email|as_crispy_field }}
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-md-6">
+            {{ form.date|as_crispy_field }}
+        </div>
+        <div class="col-md-6">
+            {{ form.heure|as_crispy_field }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ form.expertise|as_crispy_field }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {{ form.message|as_crispy_field }}
+        </div>
+    </div>
+
+    <div class="row justify-content-end">
+        <div class="col-auto">
+            <button type="submit" class="btn btn-custom mt-3">Envoyer</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.montserrat-custom {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.montserrat-custom-light {
+    font-weight: 380;
+}
+
+.montserrat-custom-bold {
+    font-weight: 770;
+}
+
+/* Utilisation de la police Montserrat dans votre document */
+body {
+    font-family: 'Montserrat', sans-serif; /* Utilisation de Montserrat avec fallback sans-serif */
+}
+
+.yellow-lumel-bg {
+    background-color: #F6EFA0;
+}
+
+.yellow-lumel {
+    color: #F6EFA0;
+}
+
+.blue-lumel-bg {
+    background-color: #292E5E;
+}
+
+.blue-lumel {
+    color: #292E5E;
+}
+
+.green-lumel-bg {
+    background-color: #AAD4AD;
+}
+
+.green-lumel {
+    color: #AAD4AD;
+}
+
+.orange-lumel-bg {
+    background-color: #ED694A;
+}
+
+.orange-lumel {
+    color: #ED694A;
+}
+
+.pourpre-lumel-bg {
+    background-color: #9D2766;
+}
+
+.pourpre-lumel {
+    color: #9D2766;
+}
+
+.lumel-container {
+    width: 92%; /* Largeur de 90% */
+    max-width: fit-content; /* Largeur maximale de 800 pixels */
+    margin-right: auto; /* Marge à droite automatique */
+    margin-left: auto; /* Marge à gauche automatique */
+    padding-right: 15px; /* Remplissage à droite de 15 pixels */
+    padding-left: 15px; /* Remplissage à gauche de 15 pixels */
+}
+
+#accueil {
+    padding-bottom: 6rem;
+}
+
+.citation {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 5rem;
+}
+
+.signature {
+    font-size: 1.3rem;
+}
+
+.text-presentation-section p {
+    font-size: 1.2rem;
+}
+
+.text-presentation-section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.expertises-section {
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+}
+
+.tns-outer {
+    position: relative;
+}
+
+[data-controls] {
+    display: none;
+}
+
+
+.tns-nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.tns-nav > [aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 0;
+}
+
+.tns-nav .tns-nav-active {
+    background-color: #292E5E;
+    border-color: #292E5E;
+}
+
+.my-slider h4 {
+    font-size: 2rem;
+    font-weight: 750;
+    margin-bottom: 2rem;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#id_expertises li {
+    font-size: 0.9rem;
+}
+
+#id_expertises p {
+    font-size: 1.1rem;
+}
+
+.bg-mar {
+    background-image: url('/static/lumel_app/img/marianne.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 22rem;
+}
+
+.bg-lu {
+    background-image: url('/static/lumel_app/img/lucille.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 22rem;
+
+}
+
+
+#id_equipe p {
+    font-size: 0.9rem;
+}
+
+#id_equipe h4 {
+    font-size: 1.7rem;
+}
+
+
+#id_equipe {
+    padding-bottom: 4.5rem;
+}
+
+.presentation-lu {
+    padding: 2rem 1rem 2rem 2rem;
+    text-align: left;
+}
+
+.presentation-mar {
+    padding: 2rem 1rem 2rem 2rem;
+    text-align: left;
+}
+
+#id_honoraires h4 {
+    font-size: 1.9rem;
+    font-weight: 740;
+}
+
+#id_honoraires p {
+    font-size: 1.2rem;
+    font-weight: 380;
+}
+
+#id_honoraires {
+    padding-bottom: 5.5rem;
+}
+
+
+#id_contact h4 {
+    font-size: 1.9rem;
+    font-weight: 740;
+}
+
+.col-contact {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.col-contact h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #292E5E; /* Bordure inférieure */
+    border-radius: 0; /* Pas de coins arrondis */
+    box-shadow: none; /* Pas d'ombre */
+    padding-top: 5px; /* Ajustement de l'espace au-dessus du texte */
+    padding-left: 0px;
+}
+
+
+.btn-custom {
+    background-color: white;
+    color: #292E5E;
+    border: 1px solid #292E5E;
+    border-radius: 25px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 0.9em;
+    font-weight: 350;
+}
+
+#id_message::placeholder {
+    color: #292E5E;
+    line-height: 10rem;
+    font-size: 1.3rem;
+    font-weight: 350;
+
+}
+
+#id_nom::placeholder {
+    color: #292E5E;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+#id_telephone::placeholder {
+    color: #292E5E;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+#id_email::placeholder {
+    color: #292E5E;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+#id_date::placeholder {
+    color: #292E5E;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+#id_heure::placeholder {
+    color: #292E5E;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+#id_expertise::placeholder {
+    color: #292E5E;
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #F6EFA0;
+}
+
+.social-icons {
+    list-style: none;
+    padding-right: 3rem;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li a {
+    font-size: 1.7rem;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li:last-child {
+    margin-right: 0; /* Supprimer l'espacement pour le dernier élément */
+}
+
+
+/* Pour les écrans de taille moyenne et plus grands */
+@media (min-width: 768px) {
+
+}
+
+/* Pour les écrans de grande taille */
+@media (min-width: 992px) {
+
+    .lumel-container {
+        width: 81%; /* Largeur de 90% */
+        max-width: fit-content; /* Largeur maximale de 800 pixels */
+        margin-right: auto; /* Marge à droite automatique */
+        margin-left: auto; /* Marge à gauche automatique */
+        padding-right: 15px; /* Remplissage à droite de 15 pixels */
+        padding-left: 15px; /* Remplissage à gauche de 15 pixels */
+    }
+
+    [data-controls] {
+        border: 0;
+        padding: 0;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        margin-top: -18px;
+        z-index: 1;
+        background: transparent;
+    }
+
+    [data-controls="prev"] {
+        left: -3em;
+    }
+
+    [data-controls="next"] {
+        right: -3em;
+    }
+
+
+    .nav-item {
+        margin-right: 2.4rem;
+    }
+
+    .nav-link {
+        color: #292E5E;
+        font-size: 0.7em;
+    }
+
+
+    .navbar-nav .nav-link.active {
+        color: #292E5E;
+        font-size: 0.7em;
+        font-weight: bold;
+    }
+
+    .padding-lumel {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    .padding-name {
+        padding: 6.5rem;
+    }
+
+    .name-row-right {
+        padding-right: 10rem;
+    }
+
+    .name-row-left {
+        padding-left: 10rem;
+    }
+
+    .margin-left-exp {
+        margin-left: 0.10rem;
+    }
+
+    #id_equipe h4 {
+        font-size: 2rem;
+    }
+
+    .mt-custom {
+        margin-top: 5rem;
+    }
+
+    .citation {
+        font-size: 5.5rem;
+        line-height: 1;
+        margin-top: 5rem;
+    }
+
+    .presentation-lu {
+        text-align: right;
+    }
+
+
+    .btn-custom {
+        font-size: 1.3em;
+    }
+
+
+    .lu-title {
+        text-align: right;
+    }
+
+    .mar-title {
+        text-align: left;
+    }
+
+
+    .my-slider h4 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .my-slider p {
+        font-size: 1.2rem;
+        font-weight: 380;
+    }
+
+    .my-slider ul {
+        font-size: 0.9rem;
+        font-weight: 380;
+    }
+
+}
