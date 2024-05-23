@@ -71,6 +71,7 @@ body {
 
 #accueil {
     padding-bottom: 6rem;
+    min-height: 70vh;
 }
 
 .citation {
@@ -93,8 +94,8 @@ body {
 }
 
 .expertises-section {
-    padding-bottom: 1rem;
-    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 6rem;
 }
 
 .tns-outer {
@@ -186,7 +187,7 @@ ul {
 }
 
 #id_honoraires h4 {
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     font-weight: 740;
 }
 
@@ -201,7 +202,7 @@ ul {
 
 
 #id_contact h4 {
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     font-weight: 740;
 }
 
@@ -327,7 +328,16 @@ ul {
         padding-left: 15px; /* Remplissage à gauche de 15 pixels */
     }
 
+    .container-accueil {
+        margin-right: 8em;
+    }
+
+    .text-presentation-section p {
+        font-size: 1.4rem;
+    }
+
     [data-controls] {
+        display: block;
         border: 0;
         padding: 0;
         font-size: 30px;
@@ -369,23 +379,32 @@ ul {
     }
 
     .padding-name {
-        padding: 6.5rem;
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+        padding-left: 9rem;
+        padding-right: 11rem;
     }
 
     .name-row-right {
-        padding-right: 10rem;
+        padding-right: 13rem;
+        min-height : 40rem;
     }
 
     .name-row-left {
-        padding-left: 10rem;
+        padding-left: 13rem;
+        min-height : 40rem;
     }
 
     .margin-left-exp {
         margin-left: 0.10rem;
     }
 
+    #id_equipe p {
+      font-size: 1.1rem;
+    }
+
     #id_equipe h4 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .mt-custom {
@@ -393,7 +412,7 @@ ul {
     }
 
     .citation {
-        font-size: 5.5rem;
+        font-size: 6.5rem;
         line-height: 1;
         margin-top: 5rem;
     }
@@ -418,8 +437,8 @@ ul {
 
 
     .my-slider h4 {
-        font-size: 1.9rem;
-        font-weight: 700;
+        font-size: 2.4rem;
+        font-weight: 740;
         margin-bottom: 2rem;
     }
 
