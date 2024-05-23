@@ -71,13 +71,12 @@ body {
 
 #accueil {
     padding-bottom: 6rem;
-    min-height: 70vh;
 }
 
 .citation {
-    font-size: 2.5rem;
+    font-size: 6rem;
     line-height: 1;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .signature {
@@ -85,7 +84,7 @@ body {
 }
 
 .text-presentation-section p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 .text-presentation-section {
@@ -319,6 +318,7 @@ ul {
 /* Pour les écrans de grande taille */
 @media (min-width: 992px) {
 
+
     .lumel-container {
         width: 81%; /* Largeur de 90% */
         max-width: fit-content; /* Largeur maximale de 800 pixels */
@@ -330,6 +330,10 @@ ul {
 
     .container-accueil {
         margin-right: 8em;
+    }
+
+    #accueil {
+        min-height: 70vh;
     }
 
     .text-presentation-section p {
@@ -387,12 +391,12 @@ ul {
 
     .name-row-right {
         padding-right: 13rem;
-        min-height : 40rem;
+        min-height: 40rem;
     }
 
     .name-row-left {
         padding-left: 13rem;
-        min-height : 40rem;
+        min-height: 40rem;
     }
 
     .margin-left-exp {
@@ -400,7 +404,7 @@ ul {
     }
 
     #id_equipe p {
-      font-size: 1.1rem;
+        font-size: 1.1rem;
     }
 
     #id_equipe h4 {
