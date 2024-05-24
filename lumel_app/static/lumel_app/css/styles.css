@@ -319,6 +319,146 @@ ul {
 
 /* Pour les écrans de taille moyenne et plus grands */
 @media (min-width: 768px) {
+    .lumel-container {
+        width: 81%; /* Largeur de 90% */
+        max-width: fit-content; /* Largeur maximale de 800 pixels */
+        margin-right: auto; /* Marge à droite automatique */
+        margin-left: auto; /* Marge à gauche automatique */
+        padding-right: 15px; /* Remplissage à droite de 15 pixels */
+        padding-left: 15px; /* Remplissage à gauche de 15 pixels */
+    }
+
+    .container-accueil {
+        margin-right: 8em;
+    }
+
+    #accueil {
+        min-height: 70vh;
+    }
+
+    .text-presentation-section p {
+        font-size: 1.4rem;
+    }
+
+    [data-controls] {
+        display: block;
+        border: 0;
+        padding: 0;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        margin-top: -18px;
+        z-index: 1;
+        background: transparent;
+    }
+
+    [data-controls="prev"] {
+        left: -3em;
+    }
+
+    [data-controls="next"] {
+        right: -3em;
+    }
+
+
+    .nav-item {
+        margin-right: 2.4rem;
+    }
+
+    .nav-link {
+        color: #292E5E;
+        font-size: 0.7em;
+    }
+
+
+    .navbar-nav .nav-link.active {
+        color: #292E5E;
+        font-size: 0.7em;
+        font-weight: bold;
+    }
+
+    .padding-lumel {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+
+    .padding-name {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+        padding-left: 9rem;
+        padding-right: 11rem;
+    }
+
+    .name-row-right {
+        padding-right: 13rem;
+        min-height: 40rem;
+    }
+
+    .name-row-left {
+        padding-left: 13rem;
+        min-height: 40rem;
+    }
+
+    .margin-left-exp {
+        margin-left: 0.10rem;
+    }
+
+    #id_equipe p {
+        font-size: 1.1rem;
+    }
+
+    #id_equipe h4 {
+        font-size: 2.4rem;
+    }
+
+    .mt-custom {
+        margin-top: 5rem;
+    }
+
+    .citation {
+        font-size: 6.5rem;
+        line-height: 1;
+        margin-top: 5rem;
+    }
+
+    .presentation-lu {
+        text-align: right;
+    }
+
+
+    .btn-custom {
+        font-size: 1.3em;
+    }
+
+
+    .lu-title {
+        text-align: right;
+    }
+
+    .mar-title {
+        text-align: left;
+    }
+
+
+    .my-slider h4 {
+        font-size: 2.4rem;
+        font-weight: 740;
+        margin-bottom: 2rem;
+    }
+
+    .my-slider p {
+        font-size: 1.2rem;
+        font-weight: 380;
+    }
+
+    .my-slider ul {
+        font-size: 0.9rem;
+        font-weight: 380;
+    }
+
+    .social-icons {
+    padding-right: 3rem;
+}
 
 }
 
