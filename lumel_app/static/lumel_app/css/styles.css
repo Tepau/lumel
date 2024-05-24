@@ -18,6 +18,7 @@
 /* Utilisation de la police Montserrat dans votre document */
 body {
     font-family: 'Montserrat', sans-serif; /* Utilisation de Montserrat avec fallback sans-serif */
+    overflow-x: hidden;
 }
 
 .yellow-lumel-bg {
@@ -69,12 +70,16 @@ body {
     padding-left: 15px; /* Remplissage à gauche de 15 pixels */
 }
 
+.navbar-toggler {
+        display: none; /* Masque le hamburger menu */
+    }
+
 #accueil {
     padding-bottom: 6rem;
 }
 
 .citation {
-    font-size: 6rem;
+    font-size: 3.7rem;
     line-height: 1;
     margin-top: 8rem;
 }
