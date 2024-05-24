@@ -71,8 +71,8 @@ body {
 }
 
 .navbar-toggler {
-        display: none; /* Masque le hamburger menu */
-    }
+    display: none; /* Masque le hamburger menu */
+}
 
 #accueil {
     padding-bottom: 6rem;
@@ -213,7 +213,7 @@ ul {
 }
 
 .col-contact {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
 }
 
@@ -228,7 +228,7 @@ ul {
     border-bottom: 1px solid #292E5E; /* Bordure inférieure */
     border-radius: 0; /* Pas de coins arrondis */
     box-shadow: none; /* Pas d'ombre */
-    padding-top: 5px; /* Ajustement de l'espace au-dessus du texte */
+    padding-top: 2.5rem; /* Ajustement de l'espace au-dessus du texte */
     padding-left: 0px;
 }
 
@@ -294,28 +294,14 @@ ul {
 }
 
 
-
-.social-icons {
-  list-style: none;
-  padding-right: 0rem;
-}
-
 .footer-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.social-icons li a {
-    font-size: 1.7rem;
-}
-
-.social-icons li {
-    display: inline-block;
-}
-
-.social-icons li:last-child {
-    margin-right: 0; /* Supprimer l'espacement pour le dernier élément */
+.fa-stack-mar, .fa-stack-lu {
+    margin-left: -0.5rem;
 }
 
 
@@ -343,7 +329,7 @@ ul {
     }
 
     #accueil {
-        min-height: 70vh;
+        min-height: 80vh;
     }
 
     .text-presentation-section p {
@@ -393,10 +379,10 @@ ul {
     }
 
     .padding-name {
-        padding-top: 7.5rem;
-        padding-bottom: 7.5rem;
-        padding-left: 9rem;
-        padding-right: 11rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 6rem;
+        padding-right: 8rem;
     }
 
     .name-row-right {
@@ -466,8 +452,11 @@ ul {
         font-weight: 380;
     }
 
-    .social-icons {
-    padding-right: 3rem;
-}
+
+    .fa-stack-lu {
+        margin-right: -0.5rem;
+        margin-left: 0;
+    }
+
 
 }
