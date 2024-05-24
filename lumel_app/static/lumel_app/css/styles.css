@@ -291,9 +291,11 @@ ul {
     color: #F6EFA0;
 }
 
+
+
 .social-icons {
-    list-style: none;
-    padding-right: 3rem;
+  list-style: none;
+  padding-right: 0rem;
 }
 
 .footer-list {
@@ -460,5 +462,9 @@ ul {
         font-size: 0.9rem;
         font-weight: 380;
     }
+
+    .social-icons {
+    padding-right: 3rem;
+}
 
 }
