@@ -205,6 +205,10 @@ body {
     font-weight: 740;
 }
 
+#id_contact  {
+    text-align: justify;
+}
+
 .col-contact {
     font-size: 1.1rem;
     margin-bottom: 2rem;
