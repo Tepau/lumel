@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'lumelProject',
     "crispy_forms",
     "crispy_bootstrap5",
+    "django_ckeditor_5",
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': '100%',
+    },
+    'extends': {
+        'block_toolbar': ["Bold", "Italic"],
+        'inline_toolbar': ["Bold", "Italic"],
+        'ck': 'some value',
+    },
+}
+
