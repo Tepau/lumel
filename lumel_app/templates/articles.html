@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Actualités{% endblock %}
+
+{% block section %}
+    <div id="id_actualites" class="container-fluid yellow-lumel-bg blue-lumel pt-5">
+        <div class="lumel-container">
+            <h3 class="pb-5">Actualités</h3>
+            {% for object in object_list %}
+                <h4>{{ object.titre }}</h4>
+                <i>{{ object.auteur }}, {{ object.date }}</i>
+                <p>{{ object.contenu|truncatechars:500|safe }}</p>
+                <a href="{% url 'lumel_app:detail-actualite' object.pk %}">Lire plus</a>
+                <hr class="mt-5"/>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
