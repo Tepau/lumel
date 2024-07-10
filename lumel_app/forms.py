@@ -6,11 +6,20 @@ from datetime import time
 class CustomTimeInput(forms.TimeInput):
     def format_value(self, value):
         if isinstance(value, time):
-            return value.strftime('%Hh%M')
+            return value.strftime('%H:%M')
         return value
 
 
 class ContactForm(forms.Form):
+    EXPERTISES = [
+        ('', 'Expertises'),
+        ('Droit Immobilier', 'Droit Immobilier'),
+        ('Droit Social', 'Droit Social'),
+        ('Réparation du dommage corporel', 'Réparation du dommage corporel'),
+        ('Droit Patrimonial', 'Droit Patrimonial'),
+        ('Droit Commercial', 'Droit Commercial'),
+    ]
+
     def __init__(self, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
@@ -21,7 +30,7 @@ class ContactForm(forms.Form):
     email = forms.EmailField(widget=forms.EmailInput(attrs={'placeholder': 'E-mail'}))
     date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
     heure = forms.TimeField(label='Heure', widget=CustomTimeInput(), initial=time(10, 30))
-    expertise = forms.CharField(required=False, max_length=200, widget=forms.TextInput(attrs={'placeholder': 'Expertise'}))
+    expertise = forms.ChoiceField(choices=EXPERTISES, required=True, widget=forms.Select(attrs={'class': 'form-control'}))
     message = forms.CharField(widget=forms.Textarea(attrs={'placeholder': 'Message', 'rows': 4, 'cols': 40}))
 
 
