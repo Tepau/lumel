@@ -179,7 +179,7 @@ body {
     padding-bottom: 1rem;
 }
 
-#id_actualites a,  #id_actualites p{
+#id_actualites a, #id_actualites p {
     color: #292E5E;
 }
 
@@ -214,7 +214,7 @@ body {
     font-weight: 740;
 }
 
-#id_contact  {
+#id_contact {
     text-align: justify;
 }
 
@@ -473,13 +473,19 @@ body {
 
 
 .zoom-effect-container {
-      overflow: hidden;
-      position: relative;
-      display: inline-block;
-    }
-    .zoom-effect-container img {
-      transition: transform 0.5s ease;
-    }
-    .zoom-effect-container:hover img {
-      transform: scale(1.2);
-    }
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.zoom-effect-container img {
+    transition: transform 0.5s ease;
+}
+
+.zoom-effect-container:hover img {
+    transform: scale(1.2);
+}
+
+.to-gap {
+    gap: 0em 10em;
+}

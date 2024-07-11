@@ -18,6 +18,7 @@ class ContactForm(forms.Form):
         ('Réparation du dommage corporel', 'Réparation du dommage corporel'),
         ('Droit Patrimonial', 'Droit Patrimonial'),
         ('Droit Commercial', 'Droit Commercial'),
+        ('Autre', 'Autre'),
     ]
 
     def __init__(self, *args, **kwargs):
