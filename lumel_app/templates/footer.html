@@ -28,16 +28,25 @@
         </div>
     </div>
 </div>
- <!-- Div fixée en bas de l'écran et visible uniquement sur mobile -->
-  <div class="d-sm-none fixed-bottom text-white text-center py-2 d-flex blue-lumel-bg custom-border">
-    <div class="svg-container d-flex align-items-center">
+<!-- Div fixée en bas de l'écran et visible uniquement sur mobile -->
+<div class="d-sm-none fixed-bottom text-white text-center py-2 d-flex blue-lumel-bg custom-border">
+    <a href="https://maps.google.com/?q=26+rue+L%C3%A9opold+Bellan+75002+Paris" target="_blank"
+       class="text-decoration-none text-white">
+        <div class="svg-container d-flex align-items-center">
             <img class="me-2" src="{% static 'lumel_app/img/map-marker.svg' %}" alt="Logo" width="40">
             <p class="pt-3">26 rue Léopold Bellan <br>75002 - Paris</p>
         </div>
-        <div class="vertical-line"></div>
+    </a>
+
+    <div class="vertical-line"></div>
+    <a href="mailto:contact@lumel-associees.fr" target="_blank"
+       class="text-decoration-none text-white">
         <div class="svg-container d-flex">
+
             <img class="me-2" src="{% static 'lumel_app/img/envelope-check.svg' %}" alt="Logo" width="40">
             <p class="pt-3">Contactez-nous : <br>Nous écrire</p>
         </div>
-  </div>
+    </a>
+
+</div>
 
