@@ -1,12 +1,32 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-light blue-lumel yellow-lumel-bg" style="height: 120px;">
-    <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand mx-auto" href="#">
-            <img src="{% static 'lumel_app/img/logo-bleu.png' %}" alt="Logo" width="200">
-        </a>
+<div class="container-fluid blue-lumel-bg d-flex align-items-center yellow-lumel">
+    <a class="me-sm-auto logo-top" href="#">
+        <img src="{% static 'lumel_app/img/logo-jaune.png' %}" alt="Logo" width="200">
+    </a>
 
-        <!-- Bouton collapse pour mobile -->
+    <!-- Bloc de contact avec marge à droite -->
+    <div class="contact-info d-none d-sm-flex align-items-center me-4">
+        <a href="https://maps.google.com/?q=26+rue+L%C3%A9opold+Bellan+75002+Paris" target="_blank"
+           class="text-decoration-none yellow-lumel">
+            <div class="svg-container d-flex align-items-center">
+                <img class="me-2" src="{% static 'lumel_app/img/map-marker.svg' %}" alt="Logo" width="40">
+                <p class="pt-3">26 rue Léopold Bellan <br>75002 - Paris</p>
+            </div>
+        </a>
+        <div class="vertical-line"></div>
+        <a href="mailto:contact@lumel-associees.fr" target="_blank"
+           class="text-decoration-none yellow-lumel">
+            <div class="svg-container d-flex">
+                <img class="me-2" src="{% static 'lumel_app/img/envelope-check.svg' %}" alt="Logo" width="40">
+                <p class="pt-3">Contactez-nous : <br>Nous écrire</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light blue-lumel yellow-lumel-bg">
+    <div class="container-fluid">
+        <!-- Bouton hamburger pour mobile -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -14,24 +34,17 @@
 
         <!-- Contenu de la navbar -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto me-auto me-lg-0">
-
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    {% if 'actualites/' in request.path %}
-                        <a class="nav-link" href="{% url 'lumel_app:main' %}#id_cabinet">CABINET</a>
-                    {% else %}
-                        <a class="nav-link active" href="{% url 'lumel_app:main' %}#id_cabinet">CABINET</a>
-                    {% endif %}
+                    <a class="nav-link {% if 'actualites/' in request.path %}active{% endif %}"
+                       href="{% url 'lumel_app:main' %}#id_cabinet">CABINET</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'lumel_app:main' %}#id_expertises">EXPERTISES</a>
                 </li>
                 <li class="nav-item">
-                    {% if 'actualites/' in request.path %}
-                        <a class="nav-link active" href="{% url 'lumel_app:actualites' %}">ACTUALITÉS</a>
-                    {% else %}
-                        <a class="nav-link" href="{% url 'lumel_app:actualites' %}">ACTUALITÉS</a>
-                    {% endif %}
+                    <a class="nav-link {% if 'actualites/' in request.path %}active{% endif %}"
+                       href="{% url 'lumel_app:actualites' %}">ACTUALITÉS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'lumel_app:main' %}#id_honoraires">HONORAIRES</a>
@@ -43,3 +56,4 @@
         </div>
     </div>
 </nav>
+

@@ -1,7 +1,7 @@
 {% load static %}
 
 <div class="container-fluid orange-lumel-bg yellow-lumel pb-5">
-    <div class="row pt-5 pb-5">
+    <div class="row pt-5 pb-5 custom-padding-bottom">
         <div class="col-6 col-sm-6 col-md-3">
             <div class="img-container">
                 <img src="{% static 'lumel_app/img/logo-jaune.png' %}" alt="Logo" width="200">
@@ -27,7 +27,17 @@
             </ul>
         </div>
     </div>
-    
 </div>
-</div>
+ <!-- Div fixée en bas de l'écran et visible uniquement sur mobile -->
+  <div class="d-sm-none fixed-bottom text-white text-center py-2 d-flex blue-lumel-bg custom-border">
+    <div class="svg-container d-flex align-items-center">
+            <img class="me-2" src="{% static 'lumel_app/img/map-marker.svg' %}" alt="Logo" width="40">
+            <p class="pt-3">26 rue Léopold Bellan <br>75002 - Paris</p>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="svg-container d-flex">
+            <img class="me-2" src="{% static 'lumel_app/img/envelope-check.svg' %}" alt="Logo" width="40">
+            <p class="pt-3">Contactez-nous : <br>Nous écrire</p>
+        </div>
+  </div>
 

@@ -70,9 +70,6 @@ body {
     padding-left: 15px; /* Remplissage à gauche de 15 pixels */
 }
 
-.navbar-toggler {
-    display: none; /* Masque le hamburger menu */
-}
 
 #accueil {
     padding-bottom: 6rem;
@@ -160,6 +157,12 @@ body {
 
 }
 
+
+.vertical-line {
+    border-left: 2px solid #F6EFA0; /* épaisseur et couleur de la ligne */
+    height: 100px;                /* hauteur de la ligne */
+    margin: 0 10px;               /* espacement autour de la ligne */
+}
 
 #id_equipe p {
     font-size: 0.9rem;
@@ -311,6 +314,24 @@ body {
 }
 
 
+@media (max-width: 575.98px) {
+    .custom-padding-bottom {
+      padding-bottom: 5.8rem !important; /* Ajuste la valeur selon tes besoins */
+    }
+
+    .custom-border {
+    border: 1px solid #F6EFA0;
+    }
+
+    .citation {
+        margin-top: 4rem;
+    }
+
+    .logo-top {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+  }
 /* Pour les écrans de taille moyenne et plus grands */
 @media (min-width: 768px) {
 
@@ -369,13 +390,13 @@ body {
 
     .nav-link {
         color: #292E5E;
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
 
     .navbar-nav .nav-link.active {
         color: #292E5E;
-        font-size: 0.7em;
+        font-size: 1em;
         font-weight: bold;
     }
 
