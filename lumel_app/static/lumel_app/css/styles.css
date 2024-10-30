@@ -45,6 +45,10 @@ body {
     color: #AAD4AD;
 }
 
+.dark-bg {
+    background-color: #041B25;
+}
+
 .orange-lumel-bg {
     background-color: #ED694A;
 }
@@ -160,8 +164,8 @@ body {
 
 .vertical-line {
     border-left: 2px solid #F6EFA0; /* épaisseur et couleur de la ligne */
-    height: 100px;                /* hauteur de la ligne */
-    margin: 0 10px;               /* espacement autour de la ligne */
+    height: 100px; /* hauteur de la ligne */
+    margin: 0 10px; /* espacement autour de la ligne */
 }
 
 #id_equipe p {
@@ -313,25 +317,91 @@ body {
     margin-left: -0.5rem;
 }
 
+.btn-custom:hover {
+    color: #333; /* Garder la couleur de texte initiale */
+    background-color: white; /* Garder le fond blanc */
+    border-color: #ccc; /* Garder la bordure */
+}
+
+
+.btn-navbar {
+        background-color: #292E5E; /* Couleur de fond personnalisée */
+        color: white; /* Couleur du texte */
+        border: none; /* Sans bordure */
+    }
+
+/* Empêcher les changements au survol */
+.btn-navbar:hover {
+    background-color: #292E5E; /* Garde la couleur d'origine au survol */
+    color: white; /* Garde la couleur du texte */
+}
+
+.btn-custom-1 {
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    border: 2px solid #D1EF29; /* Bordure verte */
+    border-radius: 20px; /* Arrondi du bouton */
+}
+
+.btn-custom-2 {
+    background-color: #D1EF29; /* Fond vert */
+    color: black; /* Texte noir */
+    border: none; /* Pas de bordure */
+    border-radius: 20px; /* Arrondi du bouton */
+}
+
+.navbar-toggler {
+    background-color: #F6EFA0 ;
+}
 
 @media (max-width: 575.98px) {
     .custom-padding-bottom {
-      padding-bottom: 5.8rem !important; /* Ajuste la valeur selon tes besoins */
-    }
-
-    .custom-border {
-    border: 1px solid #F6EFA0;
+        padding-bottom: 5.8rem !important; /* Ajuste la valeur selon tes besoins */
     }
 
     .citation {
         margin-top: 4rem;
     }
 
-    .logo-top {
-        margin-right: auto !important;
-        margin-left: auto !important;
+
+    .navbar {
+        background-color: #292E5E !important;
     }
-  }
+
+    .nav-div {
+        width: 100%;
+    }
+
+    .nav-link {
+        color: #F6EFA0;
+    }
+
+    .nav-btn {
+        background-color: #F6EFA0;
+        color: #292E5E !important;
+        margin-top: 10px;
+    }
+
+    .nav-btn:hover {
+        background-color: #F6EFA0;
+        color: #292E5E !important;
+        margin-top: 10px;
+    }
+
+    /* Afficher le logo jaune et masquer le logo bleu */
+    .desktop-logo {
+        display: none;
+    }
+    .mobile-logo {
+        display: block !important;
+    }
+
+    /* Masquer le texte de la balise <p> sur mobile */
+    .navbar p {
+        display: none;
+    }
+}
+
 /* Pour les écrans de taille moyenne et plus grands */
 @media (min-width: 768px) {
 
