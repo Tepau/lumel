@@ -11,7 +11,7 @@
             <line x1="10" y1="50" x2="30" y2="1" stroke="#F6EFA0" stroke-width="2"/>
         </svg>
         <a href="tel:+33954953754" target="_blank"
-           class="text-decoration-none yellow-lumel">09.54.95.37.54</a>
+           class="text-decoration-none yellow-lumel me-1">09.54.95.37.54</a>  (9h00 – 19h00) 
     </div>
 </div>
 
@@ -21,7 +21,8 @@
             <a class="me-sm-auto logo-top d-flex align-items-center" href="#">
                 <!-- Affichage conditionnel de l'image du logo selon la taille de l'écran -->
                 <img src="{% static 'lumel_app/img/logo-bleu.png' %}" alt="Logo" width="200" class="desktop-logo">
-                <img src="{% static 'lumel_app/img/logo-jaune.png' %}" alt="Logo" width="200" class="mobile-logo d-none">
+                <img src="{% static 'lumel_app/img/logo-jaune.png' %}" alt="Logo" width="200"
+                     class="mobile-logo d-none">
 
             </a>
             <p class="fw-bold d-none d-sm-block link">Cabinet Avocates à PARIS 2</p>
@@ -32,7 +33,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        
+
 
         <!-- Contenu de la navbar -->
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,14 +44,27 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'lumel_app:main' %}#id_corporel">Dommage corporel</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'lumel_app:main' %}#id_expertises">Autres expertises</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Autres expertises
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'lumel_app:main' %}#id_social">Droit social</a></li>
+                        <li><a class="dropdown-item" href="{% url 'lumel_app:main' %}#id_immobilier">Droit immobilier</a></li>
+                        <li><a class="dropdown-item" href="{% url 'lumel_app:main' %}#id_patrimonial">Droit
+                            patrimonial</a></li>
+                        <!-- Ajoute d'autres expertises ici -->
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-navbar text-white fw-bold nav-btn" href="{% url 'lumel_app:main' %}#id_contact" role="button">
+                    <a class="nav-link btn btn-navbar text-white fw-bold nav-btn"
+                       href="{% url 'lumel_app:main' %}#id_contact" role="button">
                         CONTACT
                     </a>
                 </li>
+
+
             </ul>
         </div>
     </div>
