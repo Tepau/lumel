@@ -162,6 +162,69 @@ body {
 }
 
 
+/* Structure de base */
+.card-container {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    margin: 20px auto;
+    min-width: 300px;
+    min-height: 500px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Styles pour les faces de la carte */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #ffffff;
+}
+
+.card-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+}
+
+/* Style pour le bouton */
+.btn-flip {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #292E5E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Classe qui permet de basculer la carte */
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+
+
+
 .vertical-line {
     border-left: 2px solid #F6EFA0; /* épaisseur et couleur de la ligne */
     height: 100px; /* hauteur de la ligne */

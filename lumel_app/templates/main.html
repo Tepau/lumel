@@ -47,348 +47,174 @@
                 </div>
             </div>
         </div>
-        <div class="blue-lumel-bg pb-3" id="id_expertises">
-            <div class=" lumel-container">
-                <div class="row justify-content-center">
-                    <!-- Première ligne de 3 cartes -->
-                    <div class="col-md-4 mb-4 d-flex">
-                        <div class="card text-center shadow-sm p-3" id="id_immobilier">
-                            <div class="card-icon my-3">
+        <div class="blue-lumel-bg pb-5" id="id_expertises">
+    <div class="lumel-container">
+        <div class="row">
+            <!-- Carte 1 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div id="id_immobilier" class="card-container">
+                    <div class="card">
+                        <div class="card-front d-flex flex-column align-items-center p-3">
+                            <div class="card-icon my-2">
                                 <img src="{% static 'lumel_app/img/building.svg' %}" alt="Icone 1" width="50">
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Droit immobilier</h5>
-                                <ul class="text-start mt-3">
-                                    <li>Assistance complète en baux commerciaux, précaires, professionnels, civils et
-                                        d’habitation : rédaction, négociation, résiliation, cession, sous-location,
-                                        impayés et indemnités.
-                                    </li>
-                                    <li>Création de contrats immobiliers, mandats d’achat ou de vente, partenariats,
-                                        délégations, offres, promesses et agents commerciaux.
-                                    </li>
-                                    <li>Gestion des cessions de fonds de commerce et ventes immobilières : réduction de
-                                        prix, vices cachés, ventes VEFA, droit de préemption.
-                                    </li>
-                                    <li>Expertise en copropriété pour assemblées générales, voisinage, charges et
-                                        travaux.
-                                    </li>
-                                    <li>Conseil en construction et suivi de garantie légale, responsabilité,
-                                        sous-traitance.
-                                    </li>
-                                </ul>
-                            </div>
+                            <h3 class="card-title">Droit immobilier</h3>
+                            <hr class="my-3" style="width: 50%; border: none; height: 2px; background-color: #292E5E;">
+                            <ul class="text-start mt-auto">
+                                <li>Assistance complète en baux commerciaux, précaires, professionnels, civils et d’habitation.</li>
+                                <li>Création de contrats immobiliers, mandats d’achat ou de vente, partenariats, etc.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">En savoir plus</button>
                         </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card text-center shadow-sm p-3" id="id_social">
-                            <div class="card-icon my-3">
-                                <img src="{% static 'lumel_app/img/users-alt.svg' %}" alt="Icone 2" width="50">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Droit social</h5>
-                                <ul class="text-start mt-3">
-                                    <li>Conseil et rédaction de contrats de travail et protocoles transactionnels.</li>
-                                    <li>Suivi des accidents du travail et maladies professionnelles : accompagnement des
-                                        victimes pour la reconnaissance du caractère professionnel et le calcul du
-                                        préjudice.
-                                    </li>
-                                    <li>Gestion de procédures de licenciement : respect des réglementations pour
-                                        licenciements personnels et économiques.
-                                    </li>
-                                    <li>Accompagnement en rupture conventionnelle, pour les employeurs et salariés, et
-                                        assistance en rupture anticipée de CDD avec formalités administratives.
-                                    </li>
-                                    <li>Expertise en gestion des litiges sociaux en entreprise.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div id="id_corporel" class="card text-center shadow-sm p-3">
-                            <div class="card-icon my-3">
-                                <img src="{% static 'lumel_app/img/hospital.svg' %}" alt="Icone 3" width="50">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Réparation du dommage corporel</h5>
-                                <ul class="text-start mt-3">
-                                    <li>Accompagnement des victimes d’infractions pénales devant juridictions
-                                        répressives et CIVI.
-                                    </li>
-                                    <li>Gestion des dossiers de fautes médicales et accidents médicaux (infections
-                                        nosocomiales, affections iatrogènes, aléas thérapeutiques) devant les
-                                        juridictions civiles, administratives et CCI.
-                                    </li>
-                                    <li>Assistance dans les accidents du travail et maladies professionnelles.</li>
-                                    <li>Conseil aux professionnels de santé dans la gestion de leur responsabilité :
-                                        conseil en matière de contentieux disciplinaire et suivi devant les juridictions
-                                        civiles et administratives.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Deuxième ligne de 2 cartes -->
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card text-center shadow-sm p-3" id="id_patrimonial">
-                            <div class="card-icon my-3">
-                                <img src="{% static 'lumel_app/img/balance-scale.svg' %}" alt="Icone 4" width="50">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Droit patrimonial</h5>
-                                <ul class="list text-start mt-3">
-                                    <li>Conseils en gestion de patrimoine et succession : assistance pour la mise en
-                                        place de curatelle, tutelle et mandat de protection future.
-                                    </li>
-                                    <li>Gestion et conseils pour les indivisions, partages successoraux, donations et
-                                        legs.
-                                    </li>
-                                    <li>Expertise en résolution de litiges patrimoniaux, et suivi des procédures dans
-                                        les affaires de succession.
-                                    </li>
-                                    <li>Accompagnement dans les démarches juridiques pour sécuriser et transmettre le
-                                        patrimoine selon les souhaits des clients et les règles du droit successoral,
-                                        avec rédaction d’actes personnalisés.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div id="id_commercial" class="card text-center shadow-sm p-3">
-                            <div class="card-icon my-3">
-                                <img src="{% static 'lumel_app/img/analytics.svg' %}" alt="Icone 5" width="50">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Droit commercial</h5>
-                                <ul class="text-start mt-3">
-                                    <li>Rédaction de conditions générales de vente, d’achat et d’utilisation.</li>
-                                    <li>Accompagnement dans les contrats de services, vente de biens, franchises et
-                                        distributions.
-                                    </li>
-                                    <li>Dépôt de marque et recherches d’antériorité, rédaction de mentions légales.</li>
-                                    <li>Gestion des précontentieux avec négociation de protocoles d’accords
-                                        transactionnels.
-                                    </li>
-                                    <li>Contentieux pour inexécutions contractuelles, ruptures de relations commerciales
-                                        établies, concurrence déloyale et autres conflits commerciaux, avec une approche
-                                        complète de conseil et contentieux.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 d-flex justify-content-center">
-                        <div class="card text-center shadow-sm p-3">
-                            <div class="card-body mt-5">
-                                <h2 class="card-title fw-bold pt-4">Besoin d'une expertise juridique ?</h2>
-                                <p class="pt-4">Contactez-nous pour planifier une étude de votre dossier afin de
-                                    connaître rapidement
-                                    la valeur de votre cas. Nous vous apporterons une analyse claire et des
-                                    solutions adaptées pour défendre vos intérêts.</p>
-                                <div class="border blue-lumel-bg mt-5 p-1">
-                                     <a href="mailto:contact@lumel-associees.fr" class="btn btn-custom w-100 fw-bold">
-                                    Obtenir ma stratégie personnalisée
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#292E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-                                </a>
-                                </div>
-                            </div>
+                        <div class="card-back d-flex flex-column align-items-center p-3">
+                            <h3 class="card-title">Droit immobilier</h3>
+                            <ul>
+                                <li>Gestion des cessions de fonds de commerce et ventes immobilières.</li>
+                                <li>Expertise en copropriété et conseil en construction.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">Retour</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {% comment %}<div id="id_expertises" class="lumel-container blue-lumel expertises-section">
-                <div class="row">
-                    <div class="my-slider">
-                        <div>
-                            <div class="row margin-left-exp">
-                                <h4 class="montserrat-custom-bold">Droit immobilier</h4>
-                                <div class="col-sm-12 col-md-6">
-                                    <p>Lumel Associées accompagne et conseille ses clients tant particuliers que
-                                        professionnels dans
-                                        tous leurs projets immobiliers. Le Cabinet assure également la défense des
-                                        droits de
-                                        ses
-                                        clients et les assiste dans toutes leurs problématiques et litiges immobiliers :
-                                    </p>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <ul>
-                                        <li>Baux commerciaux : rédaction, négociation, vie du bail, cession et
-                                            sous-location, congé, résiliation, renouvellement, indemnité d’éviction,
-                                            formations des professionnels de l’immobilier
-                                        </li>
-                                        <li>Baux précaires, professionnels, civils et d’habitation : rédaction,
-                                            résiliation, impayés et formations des professionnels de l’immobilier
-                                        </li>
-                                        <li>Rédaction de modèles de contrats immobiliers : mandat achat/vente,
-                                            partenariat, délégation de mandat, DIP, offre/promesse, agent commercial
-                                        </li>
-                                        <li>Cessions de fonds de commerce</li>
-                                        <li>Ventes immobilières : vices cachés, réduction du prix, Vente en Etat Futur
-                                            d’Achèvement, droit de préemption, voies d’exécution et ventes aux enchères
-                                        </li>
-                                        <li>Copropriété : représentation et contestation d’AG, troubles du voisinage,
-                                            interprétation, contestation et recouvrement de charges de copropriété,
-                                            exécution de travaux
-                                        </li>
-                                        <li>Construction : travaux et malfaçons, réception, mise en œuvre des garanties
-                                            légales, mise en œuvre de la responsabilité de droit commun des
-                                            constructeurs, sous-traitance
-                                        </li>
-                                    </ul>
-
-                                </div>
+            <!-- Carte 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div id="id_social" class="card-container">
+                    <div class="card">
+                        <div class="card-front d-flex flex-column align-items-center p-3">
+                            <div class="card-icon my-2">
+                                <img src="{% static 'lumel_app/img/users-alt.svg' %}" alt="Icone 2" width="50">
                             </div>
+                            <h3 class="card-title">Droit social</h3>
+                            <hr class="my-3" style="width: 50%; border: none; height: 2px; background-color: #292E5E;">
+                            <ul class="text-start mt-auto">
+                                <li>Conseil et rédaction de contrats de travail.</li>
+                                <li>Suivi des accidents de travail et maladies professionnelles.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">En savoir plus</button>
                         </div>
-                        <div>
-                            <div class="row margin-left-exp">
-                                <h4>Droit social</h4>
-                                <div class="col-12 col-md-6">
-                                    <p>Le cabinet intervient sur les problématiques juridiques liées au droit du travail
-                                        auprès
-                                        des entreprises, employeurs et salariés. Lumel Associées vous accompagne tout au
-                                        long de la relation de travail, de sa formation, son exécution, jusqu’à sa
-                                        rupture.
-                                    </p>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <ul>
-                                        <li>Rédaction de contrats de travail</li>
-                                        <li>Accidents du travail et maladies professionnelles : le cabinet accompagne
-                                            les
-                                            victimes dans la reconnaissance du caractère professionnel de l’accident ou
-                                            de
-                                            la
-                                            maladie, les assiste dans la détermination du préjudice subi et dans la
-                                            défense
-                                            de
-                                            leurs intérêts devant la juridiction judiciaire
-                                        </li>
-                                        <li>Procédure de licenciement : le cabinet veille au respect des dispositions
-                                            légales et
-                                            conventionnelles applicables aux licenciements personnels et économiques
-                                        </li>
-                                        <li>Rupture conventionnelle : le cabinet accompagne employeurs et salariés
-                                            dans la
-                                            négociation de la rupture amiable du contrat de travail et l’accomplissement
-                                            des
-                                            formalités liées à ce mode de rupture
-                                        </li>
-                                        <li>Rupture du CDD : assistance sur les conséquences d’une rupture anticipée du
-                                            CDD
-                                        </li>
-                                        <li>Rédaction de protocoles transactionnels</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="row margin-left-exp">
-                                <h4>Réparation du dommage corporel</h4>
-                                <div class="col-12 col-md-6">
-                                    <p>Le cabinet s’engage aux côtés des victimes de dommage corporel qu’il résulte
-                                        d’accidents
-                                        de la circulation, d’infractions pénales, d’accidents du travail ou d’accidents
-                                        médicaux. À votre écoute, le cabinet défend vos intérêts et vous assiste dans le
-                                        chiffrage de vos demandes de dommages et intérêts afin d’obtenir l’indemnisation
-                                        de
-                                        vos
-                                        préjudices :
-                                    </p>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <ul>
-                                        <li>Victimes d’infractions pénales : juridictions répressives (parties civiles)
-                                            et
-                                            CIVI
-                                            (Commission d’indemnisation des victimes)
-                                        </li>
-                                        <li>Fautes médicales, accidents médicaux, infections nosocomiales, affections
-                                            iatrogènes, aléas thérapeutiques : juridictions civiles et administratives,
-                                            CCI
-                                            (Commission de conciliation et d’indemnisation)
-                                        </li>
-                                        <li>Accidents du travail et maladies professionnelles</li>
-                                    </ul>
-                                    <p>Le cabinet accompagne également les professionnels et acteurs de santé dans le
-                                        cadre
-                                        de
-                                        la
-                                        mise en jeu de leur responsabilité (conseil et contentieux disciplinaires,
-                                        juridictions
-                                        civiles et administratives).</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="row margin-left-exp">
-                                <h4>Droit patrimonial</h4>
-                                <div class="col-12 col-md-6">
-                                    <p>Le cabinet vous conseille et défend également dans les problématiques liées aux
-                                        mesures de
-                                        protection et au droit patrimonial des personnes et de la famille :</p>
-                                </div>
-
-                                <div class="col-12 col-md-6">
-
-                                    <ul>
-                                        <li>Incapacité (curatelle, tutelle, mandat de protection future)</li>
-                                        <li>Indivisions</li>
-                                        <li>Successions</li>
-                                        <li>Libéralités (donations, legs)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="row margin-left-exp">
-                                <h4>Droit commercial</h4>
-                                <div class="col-12 col-md-6">
-                                    <p>Le cabinet intervient dans toutes les étapes de la vie des entreprises. Il vous
-                                        propose
-                                        un socle juridique adapté à votre secteur d’activité et vous assure la
-                                        sécurisation
-                                        de
-                                        vos relations partenaires et clients. Lumel Associées vous assiste et vous
-                                        représente
-                                        également dans le cadre de résolutions amiables ou judiciaires de vos litiges :
-                                    </p>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <ul>
-                                        <li>Conditions générales de vente, d’achat et d’utilisation</li>
-                                        <li>Contrats de prestations de services, de vente de biens et de
-                                            partenariats
-                                        </li>
-                                        <li>Dépôt de marque, recherche d’antériorité et rédaction de mentions
-                                            légales
-                                        </li>
-                                        <li>Contrats de franchise et de distribution</li>
-                                        <li>Précontentieux : négociations amiables, rédaction et négociation de
-                                            protocoles
-                                            d’accords transactionnels
-                                        </li>
-                                        <li>Contentieux : inexécutions contractuelles, rupture des relations
-                                            commerciales
-                                            établies, concurrence déloyale
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="card-back d-flex flex-column align-items-center p-3">
+                            <h3 class="card-title">Droit social</h3>
+                            <ul>
+                                <li>Gestion de procédures de licenciement.</li>
+                                <li>Accompagnement en rupture conventionnelle.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">Retour</button>
                         </div>
                     </div>
-
-
                 </div>
-            </div>{% endcomment %}
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div id="id_corporel" class="card-container">
+                    <div class="card">
+                        <div class="card-front d-flex flex-column align-items-center p-3">
+                            <div class="card-icon my-2">
+                                <img src="{% static 'lumel_app/img/hospital.svg' %}" alt="Icone 3" width="50">
+                            </div>
+                            <h3 class="card-title text-center">Réparation du dommage corporel</h3>
+                            <hr class="my-2" style="width: 50%; border: none; height: 2px; background-color: #292E5E;">
+                            <ul class="text-start mt-auto">
+                                <li>Accompagnement des victimes d’infractions pénales.</li>
+                                <li>Gestion des dossiers de fautes médicales et accidents médicaux.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">En savoir plus</button>
+                        </div>
+                        <div class="card-back d-flex flex-column align-items-center p-3">
+                            <h3 class="card-title">Réparation du dommage corporel</h3>
+                            <ul>
+                                <li>Assistance dans les accidents de travail.</li>
+                                <li>Conseil aux professionnels de santé dans la gestion de leur responsabilité.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">Retour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div id="id_patrimonial" class="card-container">
+                    <div class="card">
+                        <div class="card-front d-flex flex-column align-items-center p-3">
+                            <div class="card-icon my-2">
+                                <img src="{% static 'lumel_app/img/balance-scale.svg' %}" alt="Icone 4" width="50">
+                            </div>
+                            <h3 class="card-title">Droit patrimonial</h3>
+                            <hr class="my-3" style="width: 50%; border: none; height: 2px; background-color: #292E5E;">
+                            <ul class="text-start mt-auto">
+                                <li>Conseils en gestion de patrimoine et succession.</li>
+                                <li>Gestion et conseils pour les indivisions, partages successoraux, etc.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">En savoir plus</button>
+                        </div>
+                        <div class="card-back d-flex flex-column align-items-center p-3">
+                            <h3 class="card-title">Droit patrimonial</h3>
+                            <ul>
+                                <li>Expertise en résolution de litiges patrimoniaux.</li>
+                                <li>Accompagnement dans les démarches juridiques pour la succession.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">Retour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div id="id_commercial" class="card-container">
+                    <div class="card">
+                        <div class="card-front d-flex flex-column align-items-center p-3">
+                            <div class="card-icon my-2">
+                                <img src="{% static 'lumel_app/img/analytics.svg' %}" alt="Icone 5" width="50">
+                            </div>
+                            <h3 class="card-title">Droit commercial</h3>
+                            <hr class="my-3" style="width: 50%; border: none; height: 2px; background-color: #292E5E;">
+                            <ul class="text-start mt-auto">
+                                <li>Rédaction de conditions générales de vente et d'achat.</li>
+                                <li>Accompagnement dans les contrats de services, franchises, etc.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">En savoir plus</button>
+                        </div>
+                        <div class="card-back d-flex flex-column align-items-center p-3">
+                            <h3 class="card-title">Droit commercial</h3>
+                            <ul>
+                                <li>Dépôt de marque et recherches d’antériorité.</li>
+                                <li>Gestion des précontentieux avec protocoles d’accord.</li>
+                            </ul>
+                            <button class="btn-flip mt-auto">Retour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte finale -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card-container">
+                    <div class="card card-front d-flex flex-column align-items-center p-4">
+                        <h2 class="card-title fw-bold pt-4 text-center">Besoin d'une expertise juridique ?</h2>
+                        <p class="pt-4 text-center">Contactez-nous pour planifier une étude de votre dossier.</p>
+                        <div class="border blue-lumel-bg mt-5 p-1 w-100">
+                            <a href="mailto:contact@lumel-associees.fr" class="btn btn-custom w-100 fw-bold">
+                                Obtenir ma stratégie personnalisée
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#292E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h13M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+
+
+
+
         <div id="id_equipe">
             <div class="row name-row-right">
                 <div class="col-12  col-md-5 bg-mar"></div>
@@ -656,21 +482,16 @@
 {% block js %}
 
     <script>
-        let slider = tns({
-            container: '.my-slider',
-            items: 1,
-            slideBy: 'page',
-            autoplay: false,
-            arrowKeys: true,
-            nav: true,
-            navPosition: 'bottom',
-            navAsThumbnails: true,
-            touch: true,
-            controlsText: [
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" width="40" height="40" fill="#292E5E"><path stroke="#292E5E" stroke-width="6" d="M32.0625 103.03125A1 1 0 0 0 32.75 101.34375L10.21875 76 92 76C92.062316 76.01 92.125184 76.01 92.1875 76 92.711099 75.951 93.142837 75.42975 93.09375 74.90625 93.044663 74.38265 92.523599 73.9509 92 74L10.21875 74 32.75 48.6875A1.0069173 1.0069173 0 1 0 31.25 47.34375L7.25 74.34375A1 1 0 0 0 7.25 75.6875L31.25 102.6875A1 1 0 0 0 32.0625 103.03125z"/></svg>',
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" width="40" height="40" fill="#292E5E"><path stroke="#292E5E" stroke-width="6" d="M67.9375 21.96875A1 1 0 0 0 67.25 23.65625L89.78125 49 8 49C7.937684 48.99 7.8748163 48.99 7.8125 49 7.2889012 49.049 6.8571627 49.57025 6.90625 50.09375 6.955337 50.61735 7.4764012 51.0491 8 51L89.78125 51L67.25 76.3125A1.0069173 1.0069173 0 1 0 68.75 77.65625L92.75 50.65625A1 1 0 0 0 92.75 49.3125L68.75 22.3125A1 1 0 0 0 67.9375 21.96875z"/></svg>'
-            ]
+
+
+        // Sélectionne tous les boutons pour l'effet de flip
+        document.querySelectorAll('.btn-flip').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card');
+                card.classList.toggle('flipped');  // Ajoute ou retire la classe flipped pour basculer
+            });
         });
+
     </script>
 
 
