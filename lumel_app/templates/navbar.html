@@ -5,7 +5,7 @@
     <div class="contact-info d-none d-sm-flex align-items-center ms-auto me-5">
         <a href="https://maps.google.com/?q=26+rue+L%C3%A9opold+Bellan+75002+Paris" target="_blank"
            class="text-decoration-none yellow-lumel">
-            <p class="pt-3">26 rue Léopold Bellan 75002 </p>
+            <p>26 rue Léopold Bellan 75002 </p>
         </a>
         <svg width="50" height="50"> <!-- Taille du SVG -->
             <line x1="10" y1="50" x2="30" y2="1" stroke="#F6EFA0" stroke-width="2"/>
@@ -18,8 +18,7 @@
 <nav class="navbar navbar-expand-lg navbar-light blue-lumel yellow-lumel-bg">
     <div class="container-fluid">
         <div class="d-flex align-items-center nav-div">
-            <a class="me-sm-auto logo-top d-flex align-items-center" href="#">
-                <!-- Affichage conditionnel de l'image du logo selon la taille de l'écran -->
+            <a class="me-sm-auto logo-top d-flex align-items-center" href="{% url 'lumel_app:main' %}">                <!-- Affichage conditionnel de l'image du logo selon la taille de l'écran -->
                 <img src="{% static 'lumel_app/img/logo-bleu.png' %}" alt="Logo" width="200" class="desktop-logo">
                 <img src="{% static 'lumel_app/img/logo-jaune.png' %}" alt="Logo" width="100"
                      class="mobile-logo d-none">

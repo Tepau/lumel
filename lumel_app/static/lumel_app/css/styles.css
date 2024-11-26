@@ -141,7 +141,8 @@ body {
 
 #id_expertises p, #id_expertises li, .text-presentation-section {
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: left;
+    text-wrap: balance;
 }
 
 .bg-mar {
@@ -233,6 +234,20 @@ body {
 
 #id_equipe p {
     font-size: 0.9rem;
+}
+
+#id_equipe .col-md-5 {
+    margin: 0;
+    padding: 0;
+}
+
+#id_equipe .col-md-5 img {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+[data-loaded="true"]  {
+    opacity: 1 !important;
 }
 
 #id_equipe h4 {
@@ -474,6 +489,13 @@ body {
 /* Pour les écrans de grande taille */
 @media (min-width: 992px) {
 
+    a {
+        transition: opacity 0.3s; 
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
 
     .lumel-container {
         width: 81%; /* Largeur de 90% */
@@ -642,4 +664,19 @@ body {
 
 .to-gap {
     gap: 0em 10em;
+}
+
+/* Axel modifications */
+
+html {
+    overflow: auto;
+}
+
+#legals {
+    display: flex;
+    justify-content: center;
+}
+
+.legals__content {
+    max-width: 50%;
 }

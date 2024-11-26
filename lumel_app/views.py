@@ -1,6 +1,7 @@
 from django.views.generic import DetailView
 from django.views.generic.edit import FormView
 from django.views.generic.list import ListView
+from django.views.generic import TemplateView
 from django.core.mail import send_mail
 from django.core.mail import BadHeaderError
 from django.conf import settings
@@ -33,6 +34,9 @@ class MainView(FormView):
 
         return super().form_valid(form)
 
+
+class LegalsView(TemplateView):
+    template_name = "legals.html"
 
 class ArticleListView(ListView):
     template_name = "articles.html"
