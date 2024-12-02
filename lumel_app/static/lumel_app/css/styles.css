@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 .montserrat-custom {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -87,17 +86,17 @@ body {
 }
 
 .citation {
-    font-size: 3.7rem;
+    font-size: var(--fs-xxl);
     line-height: 1;
-    margin-top: 8rem;
+    margin-top: 2rem;
 }
 
 .signature {
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
 }
 
 .text-presentation-section p {
-    font-size: 1.4rem;
+    font-size: var(--fs-base);
 }
 
 .text-presentation-section {
@@ -147,7 +146,7 @@ body {
 
 
 #id_expertises p, #id_expertises li, .text-presentation-section {
-    font-size: 1.1rem;
+    font-size: var(--fs-s);
     text-align: left;
     text-wrap: balance;
 }
@@ -175,9 +174,9 @@ body {
     width: 100%;
     height: 100%;
     perspective: 1000px;
-    margin: 20px auto;
+    padding: 20px;
     min-width: 300px;
-    min-height: 500px;
+    min-height: 90vh;
 }
 
 .card {
@@ -241,6 +240,9 @@ body {
 
 #id_equipe p {
     font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-bottom: 1rem;
 }
 
 #id_equipe .col-md-5 {
@@ -292,8 +294,13 @@ body {
 
 #id_honoraires p, #id_honoraires li {
     font-size: 1.2rem;
-    font-weight: 380;
+    font-weight: 400;
     text-align: left;
+}
+
+#id_honoraires .font-bold {
+    font-weight: 700 !important;
+    margin-bottom: 1rem;
 }
 
 #id_honoraires {
@@ -307,23 +314,33 @@ body {
 }
 
 .col-contact {
-    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    font-size: var(--fs-base);
     margin-bottom: 2rem;
 }
 
+.col-contact p {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
 .col-contact h5 {
-    font-size: 0.9rem;
+    font-size: var(--fs-base);
     font-weight: bold;
-    margin-bottom: 0.1rem;
 }
 
 .form-control {
     border: none;
-    border-bottom: 1px solid #292E5E; /* Bordure inférieure */
+    border-bottom: 2px solid #292E5E; /* Bordure inférieure */
     border-radius: 0; /* Pas de coins arrondis */
     box-shadow: none; /* Pas d'ombre */
     padding-top: 2.5rem; /* Ajustement de l'espace au-dessus du texte */
     padding-left: 0px;
+}
+
+.form-control::placeholder {
+    font-size: var(--fs-lg);
+    font-weight: 600;
 }
 
 
@@ -341,44 +358,44 @@ body {
 #id_message::placeholder {
     color: #292E5E;
     line-height: 10rem;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 
 }
 
 #id_nom::placeholder {
     color: #292E5E;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 }
 
 #id_telephone::placeholder {
     color: #292E5E;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 }
 
 #id_email::placeholder {
     color: #292E5E;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 }
 
 #id_date::placeholder {
     color: #292E5E;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 }
 
 #id_heure::placeholder {
     color: #292E5E;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 }
 
 #id_expertise::placeholder {
     color: #292E5E;
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
     font-weight: 350;
 }
 
@@ -392,6 +409,15 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: .75rem;
+}
+
+.footer-list li {
+    font-weight: 400;
+}
+
+.footer-list li:first-child {
+    font-weight: 800 !important;
 }
 
 .fa-stack-mar, .fa-stack-lu {
@@ -450,10 +476,6 @@ body {
         padding-bottom: 5.8rem !important; /* Ajuste la valeur selon tes besoins */
     }
 
-    .citation {
-        margin-top: 4rem;
-    }
-
 
     .navbar {
         background-color: #292E5E !important;
@@ -482,6 +504,7 @@ body {
     /* Afficher le logo jaune et masquer le logo bleu */
     .desktop-logo {
         display: none;
+        width: 180px;
     }
     .mobile-logo {
         display: block !important;
@@ -506,7 +529,7 @@ body {
 }
 
 #accueil {
-    padding: 64px;
+    padding: 16px;
 }
 
 /* Pour les écrans de taille moyenne et plus grands */
@@ -514,7 +537,12 @@ body {
 
     #accueil {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 66% 33%;
+        padding: 64px;
+    }
+
+    .citation {
+        margin-top: 8rem;
     }
 
 }
@@ -613,7 +641,7 @@ body {
     }
 
     #id_equipe p {
-        font-size: 1.1rem;
+        font-size: var(--fs-base);
         max-width: 60ch;
     }
 
@@ -626,8 +654,6 @@ body {
     }
 
     .citation {
-        font-size: 6.5rem;
-        line-height: 1;
         margin-top: 5rem;
     }
 
@@ -704,6 +730,14 @@ html {
     overflow: auto;
 }
 
+p {
+    letter-spacing: 0.02em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: -0.02em;
+}
+
 #legals {
     display: flex;
     justify-content: center;
@@ -717,8 +751,24 @@ html {
 p, span, h1, h2, h3, h4, h5, h6, button, a, li, label, input, textarea {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-wrap: balance;
 }
-
+/* 
 .show {
     visibility: visible !important;
+} */
+
+menu, ol, ul {
+    list-style: disc !important;
+}
+
+.footer ul, footer ul li {
+    list-style: none !important;
+}
+
+/* MENU */
+
+.menu__subtitle {
+    font-size: var(--fs-base);
+    font-weight: 800;
 }

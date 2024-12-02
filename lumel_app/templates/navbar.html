@@ -11,20 +11,21 @@
             <line x1="10" y1="50" x2="30" y2="1" stroke="#F6EFA0" stroke-width="2"/>
         </svg>
         <a href="tel:+33954953754" target="_blank"
-           class="text-decoration-none yellow-lumel me-1">09.54.95.37.54</a>  (9h00 – 19h00) 
+           class="text-decoration-none yellow-lumel me-1">09.54.95.37.54 <span class="font-medium">(9h00 – 19h00)</span></a>
     </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light blue-lumel yellow-lumel-bg">
-    <div class="container-fluid">
-        <div class="d-flex align-items-center nav-div">
-            <a class="me-sm-auto logo-top d-flex align-items-center" href="{% url 'lumel_app:main' %}">                <!-- Affichage conditionnel de l'image du logo selon la taille de l'écran -->
-                <img src="{% static 'lumel_app/img/logo-bleu.png' %}" alt="Logo" width="200" class="desktop-logo">
+<header class="navbar navbar-expand-lg navbar-light blue-lumel yellow-lumel-bg">
+    <div class="flex w-full ">
+        <div class="flex w-full align-items-center px-8 gap-8">
+            <a class="logo-top d-flex align-items-center" href="{% url 'lumel_app:main' %}">                
+                <!-- Affichage conditionnel de l'image du logo selon la taille de l'écran -->
+                <img src="{% static 'lumel_app/img/logo-bleu-crop.png' %}" alt="Logo" width="180" class="desktop-logo">
                 <img src="{% static 'lumel_app/img/logo-jaune.png' %}" alt="Logo" width="100"
                      class="mobile-logo d-none">
 
             </a>
-            <p class="fw-bold d-none d-sm-block link">Cabinet Avocates à PARIS 2</p>
+            <h2 class="menu__subtitle">Cabinet Avocates à PARIS 2</h2>
 
             <!-- Bouton hamburger pour mobile -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -35,7 +36,7 @@
 
 
         <!-- Contenu de la navbar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <nav class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'lumel_app:main' %}#id_commercial">Droit Commercial</a>
@@ -65,7 +66,7 @@
 
 
             </ul>
-        </div>
+        </nav>
     </div>
-</nav>
+</header>
 
