@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     addLozad();
     AOS.init();
     addVHandVWValues();
+    addBurgerMenu();
 });
 
 // LAZY LOAD
@@ -26,4 +27,24 @@ const addVHandVWValues = () => {
         document.documentElement.style.setProperty("--vw", `${vw}px`);
     });
 };
+
+const addBurgerMenu = () => {
+    console.log('io')
+
+
+    function burgerMenu() {
+        console.log('aaaaa')
+
+    const burger = document.querySelector(".burger");
+    const burgerContainer = document.querySelector(".burger-container");
+
+    burger.addEventListener("click", () => {
+        burgerContainer.classList.toggle("active");
+    });
+}
+
+burgerMenu();
+window.addEventListener("resize", burgerMenu);
+
+}
 

@@ -8,12 +8,18 @@
     --fs-lg: 1.5rem; /* 24px */
     --fs-base: 1rem; /* 16px */
     --fs-s: 0.75rem; /* 12px */
+
+    /* COLORS */
+    --color-blue: #292E5E;
+
+    /* UTILS */
+    --h-screen: calc(var(--vh, 1vh) * 100);
     }
     
     @media (min-width: 768px) {
     :root {
         /* FONT SIZES */
-            --fs-xxl: 8rem; /* 128px */
+            --fs-xxl: 7vw;
             --fs-title: 2.75rem; /* 44px */
             --fs-lg: 1.75rem; /* 28px */
             --fs-base: 1.06rem; /* 17px*/
