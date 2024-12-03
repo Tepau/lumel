@@ -36,6 +36,9 @@ const addBurgerMenu = () => {
         console.log('aaaaa')
 
     const burger = document.querySelector(".burger");
+
+    if (!burger) return;
+
     const burgerContainer = document.querySelector(".burger-container");
 
     burger.addEventListener("click", () => {

@@ -18,7 +18,7 @@
                                 Pour des solutions juridiques éclairées
                             </h1>
 
-                            <ul class="signature montserrat-custom-light pl-8">
+                            <ul class="signature montserrat-custom pl-8">
                                 <li>Réparation du dommage corporel</li>
                                 <li>Droit social</li>
                                 <li>Droit immobilier</li>
@@ -39,25 +39,77 @@
         </div>
 
         
-        <div class="blue-lumel-bg pt-5 pb-5" id="id_cabinet">
-            <div class="lumel-container yellow-lumel text-presentation-section" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-12">
+        <div class="cabinet__container blue-lumel-bg pt-5 pb-5" id="id_cabinet">
 
-                        <h2 class="mb-4 montserrat-custom-bold">
-                            Lumel Associées, à l’écoute de vos projets juridiques                        
-                        </h2>
+            <div data-aos="fade-up" class="lumel-container flex flex-column gap-4">
 
-                        <p>Notre cabinet s&rsquo;attache &agrave; &eacute;clairer toutes vos d&eacute;cisions, que vous soyez un particulier ou une entreprise.
-                        <br>
-                        En tant que titulaire d&rsquo;appels d&rsquo;offres publics, nous conseillons et repr&eacute;sentons &eacute;galement des institutions publiques en droit priv&eacute;.
-                        <br><br>
-                        Intervenant tant en conseil, qu&rsquo;en n&eacute;gociation ou contentieux, nous traitons et menons les dossiers qui nous sont confi&eacute;s jusqu&rsquo;&agrave; leur aboutissement, en faisons en sorte que nos clients comprennent tous les enjeux juridiques et vivent ces &eacute;tapes le plus sereinement possible.
-                        <br><br>
-                        Cabinet d&rsquo;avocates sp&eacute;cialistes compl&eacute;mentaires, nous adoptons une vision moderne du droit qui s&rsquo;illustre notamment &agrave; travers : un parcours d&rsquo;accompagnement encadr&eacute;, de la clart&eacute; et de la p&eacute;dagogie, le respect des d&eacute;lais fix&eacute;s, une analyse financi&egrave;re des enjeux juridiques.</p>
-                                            
-                    </div>
+            <!-- TITLE + SUBTITLE -->
+
+            <h2 class="cabinet__title">
+                Lumel Associées, à l’écoute de vos projets juridiques                        
+            </h2>
+
+            <div class="two__cols items-end" data-aos="fade-up">
+                <div class="mt-2">
+                    <p class="text-white font-bold">
+                        Cabinet d’avocates aux spécialités complémentaires intervenant aussi bien en conseil, en négociation ou en contentieux.
+                    </p>
                 </div>
+
+
+                <div class="cabinet__pin">
+                <svg id="marker-cabinet" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 10C20 14.4183 12 22 12 22C12 22 4 14.4183 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z" stroke="#F6EFA0" stroke-width="1.5"></path><path d="M12 11C12.5523 11 13 10.5523 13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10C11 10.5523 11.4477 11 12 11Z" fill="#F6EFA0" stroke="#F6EFA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                    <ul class="text-yellow font-semibold">
+                        <li>Barreau de Paris</li>
+                        <li>Compétence sur toute la France</li>
+
+                    </ul>
+                </div>
+            </div>
+
+         <!-- SIGNES DISTINCTIFS -->
+          <div class="flex flex-column items-end py-16">
+            <div class="cabinet__box__container">
+
+                <div class="bg-white cabinet__box p-4" data-aos="zoom-in">
+                    <h4>Nos clients</h4>
+                    <p>
+                        Particuliers et entreprises qui recherchent un accompagnement de qualité fondé sur une relation de confiance et une communication claire.
+                    </p>
+                </div>
+
+                <div class="bg-white cabinet__box p-4" data-aos="zoom-in">
+                    <h4>Autre singularité</h4>
+                    <p>
+                        Le cabinet, titulaire d’appels d’offres publics, conseille et représente des institutions publiques.
+                    </p>
+
+                </div>
+            </div>
+
+          </div>
+
+
+            <!-- PHOTO -->
+            <div class="two__cols pb-32" id="duo" data-aos="fade-in">
+                <div>
+                        <img 
+                        data-src="{% static 'lumel_app/img/portrait-duo.jpeg' %}" 
+                        class="lozad w-full object-cover" 
+                        alt="Marianne Carbonnel"
+                        >                            
+                </div>
+
+                <div class="px-8" data-aos="fade-up">
+                    <ul class="text-white font-semibold">
+                        <li>Animation d’ateliers, de webinaires et de formations pour renforcer les connaissances et compétences des équipes sur
+                            un sujet juridique.</li>
+                        <li>Les associées contribuent également à l’accessibilité de l’actualité et des analyses juridiques en publiant régulièrement des articles et infographies sur leurs spécialités.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
             </div>
         </div>
 
@@ -67,7 +119,7 @@
         <div class="row">
             <!-- Carte 1 -->
             <div class="col-md-4 mb-4 d-flex justify-content-center" data-aos="zoom-in">
-                <div id="id_immobilier" class="card-container">
+                <div id="id_immobilier" class="card-container scroll__offset">
                     <div class="card">
                         <div class="card-front d-flex flex-column align-items-center p-3">
                             <div class="card-icon my-2">
@@ -102,7 +154,7 @@
 
             <!-- Carte 2 -->
             <div class="col-md-4 mb-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-                <div id="id_social" class="card-container">
+                <div id="id_social" class="card-container scroll__offset">
                     <div class="card">
                         <div class="card-front d-flex flex-column align-items-center p-3">
                             <div class="card-icon my-2">
@@ -133,7 +185,7 @@
 
             <!-- Carte 3 -->
             <div class="col-md-4 mb-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200">
-                <div id="id_corporel" class="card-container">
+                <div id="id_corporel" class="card-container scroll__offset">
                     <div class="card">
                         <div class="card-front d-flex flex-column align-items-center p-3">
                             <div class="card-icon my-2">
@@ -167,7 +219,7 @@
 
             <!-- Carte 5 -->
             <div class="col-md-4 mb-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="300">
-                <div id="id_commercial" class="card-container">
+                <div id="id_commercial" class="card-container scroll__offset">
                     <div class="card">
                         <div class="card-front d-flex flex-column align-items-center p-3">
                             <div class="card-icon my-2">
@@ -201,22 +253,16 @@
             <!-- Carte finale -->
             <div class="col-md-4 mb-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="400">
                 <div class="card-container blue-lumel">
-                    <div class="card d-flex flex-column align-items-center">
+                    <div class="card d-flex flex-column align-items-center p-3">
                         <h3 class="card-title fw-bold pt-4 text-center">
                             Besoin d’un expert pour vous conseiller dans votre projet juridique ?
                         </h3>
                         <p class="pt-4 text-center">Contactez-nous pour planifier une étude de votre dossier.</p>
-                        <div class="mt-5 p-1 w-100 px-4">
-                            <a href="mailto:contact@lumel-associees.fr" class="btn btn-custom w-100 fw-bold">
-                                Contactez-nous pour planifier l’étude de votre dossier
-                                <div class="svg__container">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#292E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h13M12 5l7 7-7 7"/>
-                                </svg>
-                            </div>
 
-                            </a>
-                        </div>
+                        <a href="mailto:contact@lumel-associees.fr" class="btn btn-flip">
+                            Contactez-nous
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -239,7 +285,7 @@
                 </div>
 
                 <div class="col-12  col-md-7 green-lumel-bg blue-lumel padding-name presentation-mar">
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-in">
                     <h4 class="mb-4 montserrat-custom-bold mar-title">Marianne Carbonnel</h4>
                     <div class="montserrat-custom-light">
                         <p>Avocate au Barreau de Paris depuis janvier 2018, Me Carbonnel est sp&eacute;cialis&eacute;e en droit droit immobilier et droit commercial.</p>
@@ -274,7 +320,7 @@
                 <div class="col-sm-12 col-md-7 yellow-lumel-bg blue-lumel padding-name  presentation-lu order-md-first">
                     <!-- Colonnes principale, déplacée vers le haut sur les petits écrans -->
 
-                    <div data-aos="fade-up">
+                    <div data-aos="fade-in">
 
                     <h4 class="mb-4 montserrat-custom-bold lu-title">Lucile Quénet</h4>
                     
@@ -303,7 +349,7 @@
         </div>
         <div class="bg-white">
             <div class="lumel-container blue-lumel">
-                <div id="id_honoraires" class="row">
+                <div id="id_honoraires" class="row" data-aos="fade-in">
                     <div class="col-12">
                         <h4 class="mb-4">Notre méthodologie et approche budgétaire</h4>
                     </div>
@@ -426,18 +472,19 @@
         </div>
         <div id="id_podcast" class="blue-lumel-bg pt-5 pb-5">
             <div class="lumel-container yellow-lumel">
-                <div class="row justify-content-center to-gap">
+                <div class="row justify-content-center gap-4">
                     <div class="col-12 montserrat-custom-bold">
                         <h4 class="mb-5 mt-5">Ils parlent de nous :</h4>
                     </div>
 
-                    <div class="col-12 col-md-3" data-aos="zoom-in">
+                    <div class="col-12 col-md-4" data-aos="zoom-in">
                         <a href="https://open.spotify.com/episode/5Glrr6qs1HCRoEvYbQaaCm?si=jB2FwCqxQZOxAcCgnAbFkw&nd=1&dlsi=e4ce8632cb784496"
                            class="text-decoration-none yellow-lumel"
                            target="_blank"
                            >
                             <div class="zoom-effect-container rounded mb-2">
-                                <img src="{% static 'lumel_app/img/podcast(2).jpeg' %}" class="img-fluid"
+                                <img src="{% static 'lumel_app/img/podcast(2).jpeg' %}" 
+                                    class="w-full"
                                      alt="Logo">
                             </div>
                             <div class="d-flex align-items-start">
@@ -470,13 +517,13 @@
 
                     </div>
 
-                    <div class="col-12 col-md-3 mt-5" data-aos="zoom-in">
+                    <div class="col-12 col-md-4 mt-5" data-aos="zoom-in">
                         <a href="https://open.spotify.com/episode/1Jt1KV5K2qSaAEL2P25cxN"
                            class="text-decoration-none yellow-lumel"
                            target="_blank"
                            >
                            <div class="zoom-effect-container rounded mb-2">
-                            <img src="{% static 'lumel_app/img/podcast(2).jpeg' %}" class="img-fluid"
+                            <img src="{% static 'lumel_app/img/podcast(2).jpeg' %}" class="w-full"
                                      alt="Logo">
                             </div>
                             <div class="d-flex align-items-start">
