@@ -731,7 +731,7 @@ nav ul {
     width: 180px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
     .custom-padding-bottom {
         padding-bottom: 5.8rem !important; /* Ajuste la valeur selon tes besoins */
     }
