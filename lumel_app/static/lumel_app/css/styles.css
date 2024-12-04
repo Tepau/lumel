@@ -160,7 +160,8 @@ nav ul {
 }
 
 #id_expertises p {
-    font-size: 20px;
+    color: var(--color-blue);
+    font-size: var(--fs-base);
     text-align: center;
     line-height: 1.2;
     display: -webkit-box;
@@ -250,6 +251,20 @@ nav ul {
 }
 
 /* Style pour le bouton */
+
+.btn-light {
+    background-color: transparent !important;
+    border: 1px solid var(--color-blue) !important;
+    color: var(--color-blue) !important;
+    transition: all 0.3s;
+}
+
+.btn-light:hover {
+    background-color: var(--color-blue) !important;
+    color: white !important;
+    opacity: 1;
+}
+
 .btn-flip {
     margin-top: 15px;
     padding: 8px 16px;
@@ -335,9 +350,7 @@ nav ul {
     gap: 1rem;
 }
 
-.presentation-mar div a, .presentation-lu div a {
-    align-self: center;
-}
+
 
 #id_honoraires h4, #id_podcast h4 {
     font-size: 2.4rem;
@@ -754,6 +767,10 @@ nav ul {
 
 @media (max-width: 768px) {
 
+    .presentation-mar div a, .presentation-lu div a {
+        align-self: center;
+    }
+
     header {
         position: fixed;
         top: 0;
@@ -1114,7 +1131,7 @@ ul {
     }
 
     .card-container {
-        min-height: calc(var(--vh) * 90);
+        min-height: calc(var(--vh) * 70);
     }
 
     .cabinet__pin {
