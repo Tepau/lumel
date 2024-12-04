@@ -72,6 +72,12 @@ body {
     color: #9D2766;
 }
 
+
+#accueil .lumel-container {
+    margin-right: unset; 
+    margin-left: unset;
+}
+
 .lumel-container {
     width: 92%; /* Largeur de 90% */
     max-width: -webkit-fit-content;
@@ -79,8 +85,12 @@ body {
     max-width: fit-content; /* Largeur maximale de 800 pixels */
     margin-right: auto; /* Marge à droite automatique */
     margin-left: auto; /* Marge à gauche automatique */
-    padding-right: 15px; /* Remplissage à droite de 15 pixels */
-    padding-left: 15px; /* Remplissage à gauche de 15 pixels */
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.form-control {
+    padding-top: 0 !important;
 }
 
 nav ul {
@@ -707,6 +717,8 @@ nav ul {
     padding: 0;
     margin: 0;
     font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
 .footer-list li {
@@ -732,6 +744,7 @@ nav ul {
         background-color: #292E5E; /* Couleur de fond personnalisée */
         color: white; /* Couleur du texte */
         border: none; /* Sans bordure */
+        transition: opacity 0.3s; /* Transition de l'opacité */
     }
 
 /* Empêcher les changements au survol */
@@ -785,6 +798,22 @@ nav ul {
 }
 
 @media (max-width: 768px) {
+
+
+    .lumel-container {
+        width: 81%; /* Largeur de 90% */
+        max-width: -webkit-fit-content;
+        max-width: -moz-fit-content;
+        max-width: fit-content; /* Largeur maximale de 800 pixels */
+        margin-right: auto; /* Marge à droite automatique */
+        margin-left: auto; /* Marge à gauche automatique */
+        padding-right: 15px; /* Remplissage à droite de 15 pixels */
+        padding-left: 15px; /* Remplissage à gauche de 15 pixels */
+    }
+
+    .btn-navbar {
+        width: 100%;
+    }
 
     .blue-card .btn-light {
         background: white !important;
@@ -1046,8 +1075,14 @@ header {
     color: var(--color-blue) !important;
 }
 
+.dropdown-item {
+    color: var(--color-blue) !important;
+    font-size: var(--fs-s) !important;
+}
+
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: transparent !important;
+    opacity: 1 !important;
 }
 
 
@@ -1067,6 +1102,10 @@ header {
 
 
 /* TAILWIND */
+
+.uppercase {
+    text-transform: uppercase;
+}
 
 .grid {
     display: grid;
@@ -1141,6 +1180,19 @@ ul {
 
 /* Pour les écrans de taille moyenne et plus grands */
 @media (min-width: 768px) {
+
+    a {
+        transition: opacity 0.3s; 
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+
+    .dropdown-item {
+        padding: 0 !important;
+        padding-bottom: .33rem !important;
+    }
 
     [class~="lg:grid-cols-2"] {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1222,26 +1274,6 @@ ul {
 
 /* Pour les écrans de grande taille */
 @media (min-width: 992px) {
-
-    a {
-        transition: opacity 0.3s; 
-    }
-
-    a:hover {
-        opacity: 0.7;
-    }
-
-    .lumel-container {
-        width: 81%; /* Largeur de 90% */
-        max-width: -webkit-fit-content;
-        max-width: -moz-fit-content;
-        max-width: fit-content; /* Largeur maximale de 800 pixels */
-        margin-right: auto; /* Marge à droite automatique */
-        margin-left: auto; /* Marge à gauche automatique */
-        padding-right: 15px; /* Remplissage à droite de 15 pixels */
-        padding-left: 15px; /* Remplissage à gauche de 15 pixels */
-    }
-
 
 
     #accueil {
