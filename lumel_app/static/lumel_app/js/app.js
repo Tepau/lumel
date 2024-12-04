@@ -1,9 +1,21 @@
+// Document ready, start functions
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Initialize AOS / Animation library
+    addAOS();
+
     addLozad();
-    AOS.init();
     addVHandVWValues();
-    addBurgerMenu();
 });
+
+const addAOS = () => {
+
+    // Initialize AOS / Animation library
+    // Init only for desktop
+    AOS.init({
+        disable: 'mobile'
+      });
+}
 
 // LAZY LOAD
 const addLozad = () => {
@@ -11,6 +23,11 @@ const addLozad = () => {
     observer.observe();
 }  
 
+/* 
+Add --vh and --vw values to the root element
+to fix the vh and vw units on mobile devices
+
+*/
 const addVHandVWValues = () => {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -28,26 +45,5 @@ const addVHandVWValues = () => {
     });
 };
 
-const addBurgerMenu = () => {
-    console.log('io')
 
-
-    function burgerMenu() {
-        console.log('aaaaa')
-
-    const burger = document.querySelector(".burger");
-
-    if (!burger) return;
-
-    const burgerContainer = document.querySelector(".burger-container");
-
-    burger.addEventListener("click", () => {
-        burgerContainer.classList.toggle("active");
-    });
-}
-
-burgerMenu();
-window.addEventListener("resize", burgerMenu);
-
-}
 

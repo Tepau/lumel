@@ -160,7 +160,7 @@ nav ul {
 }
 
 #id_expertises p {
-    font-size: var(--fs-lg);
+    font-size: 20px;
     text-align: center;
     line-height: 1.2;
     display: -webkit-box;
@@ -278,7 +278,6 @@ nav ul {
     font-size: 0.9rem;
     line-height: 1.4;
     font-weight: 400;
-    padding-bottom: 1rem;
 }
 
 #id_equipe .col-md-5 {
@@ -328,6 +327,16 @@ nav ul {
 .presentation-mar {
     padding: 2rem 1rem 2rem 2rem;
     text-align: left;
+}
+
+.presentation-mar div, .presentation-lu div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.presentation-mar div a, .presentation-lu div a {
+    align-self: center;
 }
 
 #id_honoraires h4, #id_podcast h4 {
@@ -731,7 +740,28 @@ nav ul {
     width: 180px;
 }
 
+.nav-link:focus, .nav-link:hover {
+    color: #ED694A;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="%23292e5e"><path d="M3 5H21" stroke="%23292e5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 12H21" stroke="%23292e5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 19H21" stroke="%23292e5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>') !important;
+}
+
+[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="%23292e5e"><path d="M6 12H18" stroke="%23292e5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>') !important;
+}
+
 @media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
     .custom-padding-bottom {
         padding-bottom: 5.8rem !important; /* Ajuste la valeur selon tes besoins */
     }
@@ -747,6 +777,7 @@ nav ul {
 
     .nav-link {
         color: #F6EFA0;
+        font-weight: 500;
     }
 
     .nav-btn {
@@ -963,9 +994,6 @@ menu, ol, ul {
 
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: var(--color-blue);
     transition: background-color 0.3s;
     padding: 2rem;
@@ -993,8 +1021,93 @@ header {
 }
 
 
+
+
+
+
+/* TAILWIND */
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    
+}
+
+.w-full {
+    width: 100%;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+ul {
+    padding: 0;
+}
+
+.pl-8 {
+    padding-left: 2rem;
+}
+
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.pt-5 {
+    padding-top: 1.25rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.gap-12 {
+    gap: 3rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-s {
+    font-size: var(--fs-s);
+}
+
+.text-white {
+    color: white;
+}
+
 /* Pour les écrans de taille moyenne et plus grands */
 @media (min-width: 768px) {
+
+    [class~="lg:grid-cols-2"] {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    .navbar-expand-md .navbar-nav {
+        align-items: center;
+    }
 
     #id_expertises p {
         display: block;
@@ -1125,7 +1238,7 @@ header {
     .nav-link {
         color: #292E5E;
         font-size: var(--fs-s);
-        font-weight: 500;
+        padding: 0 !important;
     }
 
 
@@ -1215,56 +1328,4 @@ header {
         margin-right: -0.5rem;
         margin-left: 0;
     }
-}
-
-
-/* TAILWIND */
-.w-full {
-    width: 100%;
-}
-
-.object-cover {
-    object-fit: cover;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.items-end {
-    align-items: flex-end;
-}
-
-ul {
-    padding: 0;
-}
-
-.px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.pt-5 {
-    padding-top: 1.25rem;
-}
-
-.gap-4 {
-    gap: 1rem;
-}
-
-.gap-8 {
-    gap: 2rem;
-}
-
-.font-semibold {
-    font-weight: 600;
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
-.text-white {
-    color: white;
 }

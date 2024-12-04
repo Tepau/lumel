@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-md navbar-light blue-lumel yellow-lumel-bg">
+<header class="navbar navbar-expand-md navbar-light blue-lumel yellow-lumel-bg">
     <div class="container-fluid">
         <div class="d-flex align-items-center nav-div">
             <a class="me-sm-auto logo-top d-flex align-items-center" href="#">
@@ -25,7 +25,7 @@
                      class="mobile-logo d-none">
 
             </a>
-            <p class="fw-bold d-none d-sm-block link">Cabinet Avocates à PARIS 2</p>
+            <span class="font-bold d-none d-sm-block link">Cabinet Avocates à PARIS 2</span>
 
             <!-- Bouton hamburger pour mobile -->
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +36,7 @@
 
 
         <!-- Contenu de la navbar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <nav class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'lumel_app:main' %}#id_commercial">Droit Commercial</a>
@@ -58,7 +58,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-navbar text-white fw-bold nav-btn"
+                    <a class="btn btn-navbar text-white font-semibold nav-btn"
                        href="{% url 'lumel_app:main' %}#id_contact" role="button">
                         CONTACT
                     </a>
@@ -66,6 +66,6 @@
 
 
             </ul>
-        </div>
+        </nav>
     </div>
-</nav>
+</header>
