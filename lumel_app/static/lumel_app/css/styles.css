@@ -221,6 +221,25 @@ nav ul {
     font-size: var(--fs-lg);
 }
 
+.blue-card {
+    background-color: var(--color-blue);
+    border: 1px solid white;
+}
+
+.blue-card .card-title, .blue-card p {
+    color: white !important
+}
+
+.blue-card .btn-light {
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.blue-card .btn-light:hover {
+    background-color: white !important;
+    color: var(--color-blue) !important;
+}
+
 
 
 /* Styles pour les faces de la carte */
@@ -767,6 +786,11 @@ nav ul {
 
 @media (max-width: 768px) {
 
+    .blue-card .btn-light {
+        background: white !important;
+        color: var(--color-blue) !important;
+    }
+
     .presentation-mar div a, .presentation-lu div a {
         align-self: center;
     }
@@ -1048,10 +1072,6 @@ header {
     display: grid;
 }
 
-.grid-cols-2 {
-    
-}
-
 .w-full {
     width: 100%;
 }
@@ -1080,6 +1100,11 @@ ul {
 .px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .pt-5 {
