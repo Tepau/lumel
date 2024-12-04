@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% load crispy_forms_tags %}
+
 {% block title %}Lumel Associées{% endblock %}
+{% block meta_title %}Lumel Associées{% endblock %}
+{% block meta_ogtitle %}Lumel Associées{% endblock %}
+{% block canonical_url %}https://www.lumel-associees.fr/{% endblock %}
 
 {% block section %}
 
@@ -90,7 +94,7 @@
 
 
             <!-- PHOTO -->
-            <div class="two__cols pb-32" id="duo" data-aos="fade-in">
+            <div class="two__cols py-32" id="duo" data-aos="fade-in">
                 <div>
                         <img 
                         data-src="{% static 'lumel_app/img/portrait-duo.jpeg' %}" 

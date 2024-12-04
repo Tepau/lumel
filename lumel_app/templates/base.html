@@ -2,20 +2,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="title" content="{% block meta_title %}{% endblock %}">
+    <meta name="author" content="Lumel & Associées">
+    <meta name="description" content="Cabinet d'avocates à Paris 2, alliant modernité et transparence, dédié à défendre vos droits avec éthique et expertise dans tous vos enjeux juridiques.">
+    <link rel="canonical" href="{% block canonical_url %}{% endblock %}">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="avocat, avocates, droit, cabinet, paris, 2, commercial, corporel, social, immobilier, patrimonial, expertise, modernité, transparence, éthique, expertise, juridique, lumel, associées">
+    <meta name="theme-color" content="#292E5E">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lumel-associees.fr/">
+    <meta property="og:title" content="{% block meta_ogtitle %}{% endblock %}">
+    <meta property="og:description" content="Cabinet d'avocates à Paris 2, alliant modernité et transparence, dédié à défendre vos droits avec éthique et expertise dans tous vos enjeux juridiques.">
+    <meta property="og:image" content="{% static 'lumel_app/img/portrait-duo.jpeg' %}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lumel & Associées">
+
+
     <title>{% block title %}{% endblock %}</title>
     
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PJF5C2BK');</script>
-    <!-- End Google Tag Manager -->
+
 
     <link rel="shortcut icon" type="image/png" href="{% static 'lumel_app/img/favicon.png' %}">
 
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PJF5C2BK');</script>
+      <!-- End Google Tag Manager -->
 
     <!-- LIBS-->
     <link href="{% static 'lumel_app/css/libs/aos.css' %}" rel="stylesheet">
