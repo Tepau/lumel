@@ -419,7 +419,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 8rem 2rem;
+    padding: 2rem;
     background: var(--color-green, #AAD4AD);
 }
 
@@ -428,7 +428,7 @@ font-weight: 500;
 }
 
 #honoraires__more {
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -437,7 +437,6 @@ font-weight: 500;
 #honoraires__more h4 {
     position: relative;
     font-size: var(--fs-lg);
-    width: 75%;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -893,6 +892,9 @@ font-weight: 500;
 
 @media (max-width: 768px) {
 
+    #id_equipe h4 {
+        text-align: left !important;
+    }
 
     .lumel-container {
         width: 81%; /* Largeur de 90% */
@@ -1308,6 +1310,16 @@ ul {
     #id_honoraires {
         padding-bottom: 12rem;
     }
+
+
+    #honoraires__content {
+        padding: 8rem 2rem;
+    }
+
+    #honoraires__more h4 {
+        width: 75%;
+    }
+
 
     #honoraires__more div {
         width: 50%;
