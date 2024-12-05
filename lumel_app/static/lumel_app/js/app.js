@@ -1,11 +1,11 @@
 // Document ready, start functions
 document.addEventListener('DOMContentLoaded', function() {
+    addVHandVWValues();
 
     // Initialize AOS / Animation library
     addAOS();
 
     addLozad();
-    addVHandVWValues();
 });
 
 const addAOS = () => {

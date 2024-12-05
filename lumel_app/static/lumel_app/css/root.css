@@ -11,6 +11,7 @@
 
     /* COLORS */
     --color-blue: #292E5E;
+    --color-green: #AAD4AD;
     --color-yellow: #F6EFA0;
     /* UTILS */
     --h-screen: calc(var(--vh, 1vh) * 100);

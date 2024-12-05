@@ -45,11 +45,11 @@ body {
 }
 
 .green-lumel-bg {
-    background-color: #AAD4AD;
+    background-color: var(--color-green);
 }
 
 .green-lumel {
-    color: #AAD4AD;
+    color: var(--color-green);
 }
 
 .dark-bg {
@@ -325,7 +325,13 @@ nav ul {
 #id_equipe p {
     font-size: 0.9rem;
     line-height: 1.4;
-    font-weight: 400;
+    font-weight: 500;
+    margin: 0;
+}
+
+#id_equipe .atouts {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 #id_equipe .col-md-5 {
@@ -386,9 +392,7 @@ nav ul {
 .presentation-mar div, .presentation-lu div {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
-
 
 
 #id_honoraires h4, #id_podcast h4 {
@@ -408,8 +412,88 @@ nav ul {
 }
 
 #id_honoraires {
-    padding-bottom: 5.5rem;
+    padding-bottom: 6rem;
 }
+
+#honoraires__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 8rem 2rem;
+    background: var(--color-green, #AAD4AD);
+}
+
+#honoraires__title p{
+font-weight: 500;
+}
+
+#honoraires__more {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#honoraires__more h4 {
+    position: relative;
+    font-size: var(--fs-lg);
+    width: 75%;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#honoraires__more h4::before {
+    position: absolute;
+    top: -2rem;
+    left: -6rem;
+    content: "<<";
+    font-weight: 800;
+    font-size: var(--fs-xxl);
+    color: var(--color-green);
+    z-index: -1;
+}
+
+#honoraires__more p {
+    font-size: var(--fs-base);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#honoraires__boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+#honoraires__boxs div {
+    position: relative;
+}
+
+#honoraires__content h4 {
+    font-size: var(--fs-base);
+    text-align: center;
+}
+
+#honoraires__content h5 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: white;
+    font-size: var(--fs-xxl);
+    font-weight: 800;
+    opacity: 0.5;
+}
+
+#honoraires__content p {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--fs-s);
+}
+
 
 
 #id_contact h4 {
@@ -997,7 +1081,8 @@ menu, ol, ul {
 
 .mobile__bottom__contact {
     background: rgba(41, 46, 94, 0.33);
-    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
 }
 
 .two-cols {
@@ -1065,9 +1150,10 @@ menu, ol, ul {
 }
 
 #id_cabinet img {
-    object-position: 0 30%;
-    height: calc(var(--vh) * 66);
-    clip-path: polygon(0 22%, 91% 0, 100% 100%, 0% 100%);
+       object-position: 0 30%;
+    height: calc((var(--vh), 1vh) * 66);
+    -webkit-clip-path: polygon(0 22%, 91% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 22%, 91% 0, 100% 100%, 0% 100%);
 
 }
 
@@ -1126,7 +1212,14 @@ header {
 }
 
 .object-cover {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.flex {
+    display: -webkit-box; /* Fallback for older Safari versions */
+    display: -ms-flexbox; /* Fallback for IE10 */
+    display: flex !important;
 }
 
 .flex-column {
@@ -1134,8 +1227,19 @@ header {
     flex-direction: column;
 }
 
+.justify-end {
+    -webkit-box-pack: end; /* Fallback for older Safari versions */
+    -ms-flex-pack: end; /* Fallback for IE10 */
+    justify-content: flex-end;
+}
+
 .items-end {
     align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.self-end {
+    align-self: flex-end;
 }
 
 ul {
@@ -1154,6 +1258,11 @@ ul {
 .py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .py-32 {
@@ -1195,6 +1304,26 @@ ul {
 
 /* Pour les écrans de taille moyenne et plus grands */
 @media (min-width: 768px) {
+
+    #id_honoraires {
+        padding-bottom: 12rem;
+    }
+
+    #honoraires__more div {
+        width: 50%;
+    }
+
+    #honoraires__boxs div {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    #honoraires__boxs {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
 
     a {
         transition: opacity 0.3s; 
@@ -1264,8 +1393,16 @@ ul {
     }
 
     .two__cols {
+        display: -webkit-box; /* Fallback for older Safari versions */
+        display: -ms-grid; /* Fallback for IE11 */
         display: grid;
+        -webkit-box-orient: horizontal; /* Fallback for older Safari versions */
+        -webkit-box-direction: normal; /* Fallback for older Safari versions */
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #duo {
+        overflow: hidden;
     }
 
     .text-presentation-section h2 {
